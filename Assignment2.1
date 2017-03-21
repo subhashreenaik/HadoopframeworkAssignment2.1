@@ -1,0 +1,6 @@
+start-all.sh
+hadoop fs -ls /user
+hadoop fs -mkdir /user/acadgild
+hadoop fs touchz /user/acadgild/hadoop/wordcount.txt
+vi wordcount.txt
+hadoop fs -cat /user/acadgild/hadoop/wordcount.txt
